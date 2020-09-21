@@ -4,7 +4,7 @@ class Ex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name:this.props.name.charAt(this.props.char),
+      name:this.props.name.charAt(this.props.char-1),
         char:this.props.char
     };
   }
@@ -21,7 +21,7 @@ class Ex extends React.Component {
 ReactDOM.render(
   <div>
     {" "}
-    <Ex name="Vinodh" char="1" />
+    <Ex name="Vinodh" char="3" />
     <Ex name="Erode" char="1" />
   </div>,
   document.getElementById("root")
